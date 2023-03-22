@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            portfolio
+        </title>
+       <link rel="stylesheet"href="style.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" >
+    </head>
+    <body>
+        <div class="user">
+        <img src="MY PIC.jpg"> 
+        <h1>Jothika mohan kadam</h1>
+        <p class="post">software developer</p>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#HOME">HOME</a></li>
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="#PROJECT">PROJECT</a></li>
+                <li><a href="#SKILLS">SKILLS</a></li>
+                <li><a href="#CONTACT">CONTACT</a></li>
+            </ul>
+        </nav>
+         </div>
+         <div  class="container">
+            <section class="home" id="HOME">
+            <h3>hi there..</h3>
+            <h3 class="name">My Name is <span id="joo">Jothika mohan kadam</span></h3>
+            <h3 class="post">i am <span class="texting-type">a software developer</span>:</h3>
+            <a href="#"><button class="btn">hire me</button></a>
+            </section>
+            <section class="ABOUT" id="ABOUT">
+                <h1 class="heading">about me</h1>
+                <div class="content">
+                    <h3 class="name">My Name is <span id="joo">Jothika mohan kadam</span></h3> 
+                    <p>          I am from tirukovilur.My Native place is Maharastra,currently living in tirukovilur.Now i am currently pursuing bachelor degeree with the stream of computer Science and engineering honor from ksr college of engineering at Tiruchengode. I have completed my schooling sri gnanananda matric higher secondary school in Tirukovilur.My Technical skills are Java,HTML&CSS,Javascript.My area of intrest is web programming.
+                    i have create simple registration form with using of html and css.</p>
+                </div>
+            </section>
+                  <section class="SKILLS" id="SKILLS">
+                    <h1 class="heading">skills</h1>
+                          <div class="skills">
+                          <div class="progress">
+                            <h3>html<span>85%</span></h3>
+                            <div class="bar"><span></span></div>
+                            </div>
+                                <div class="progress">
+                                  <h3>css<span>75%</span></h3>
+                                  <div class="bar"><span></span></div>
+                                  </div>
+                                  <div class="progress">
+                                    <h3>javascript<span>50%</span></h3>
+                                    <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+            </section>
+            <section class="contact" id="CONTACT">
+                <h1 class="heading">contact me</h1>
+                <div class="share">
+                    <a href="https://www.instagram.com/im_rose.ni/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jothika-mohan-kadam-m-240176258/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Jothikamohankadam"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+    
+                </div>
+                <form action="https://formspree.io/f/xrgvlnnw" method="POST">
+                <div class="get">
+                        <h3>GET IN TOUCH</h3>
+                        <input type="text" id="name" name="Name"placeholder="name">
+                        <input type="email" id="email"name="Email" placeholder="Email id">
+                        <input type="text" id="phone" name="Phone" placeholder="phone no">
+                        <input type="text" id="message" name="message" placeholder="you can message me">
+                        <button type="submit" class="sub">send</button>
+                      </div>
+                      </form>
+            </section>
+            <section class="project" id="PROJECT">
+                <h1 class="heading">my project</h1>
+                <div class="pro" >
+                    <a href=" https://jothikamohankadam.github.io/Registration-form/" ><img src="Screenshot (84).png" id="img"></a>
+                </div>
+            <div class="text-box">
+                <h2>This is a registeration form and this my first project with using html and css.</h2>
+                <h3>CLICK THAT IMAGE TO SEE REGISTRATION FORM</h3>
+            </div>
+
+            </section>
+         </div>
+            <div class="theme-toggler">
+                <span style="background: linear-gradient(deeppink,purple);"></span>
+                <span style="background: linear-gradient(#25D2F7,#F399BE);"></span>
+                <span style="background: linear-gradient(blueviolet,deeppink);"></span>
+                <span style="background: linear-gradient( #96979C,#101010);"></span>
+                <span style="background: linear-gradient( coral,blueviolet);"></span>
+            </div>
+         </div>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+         <script>
+            var type=new Typed('.texting-type',{
+                strings:['web designer','front end developer'],
+                typeSpeed:120,
+                loop:true
+
+
+            });
+            let themecolor = document.querySelectorAll('.theme-toggler span');
+            themecolor.forEach(color=> color.addEventListener('click',() =>{
+                let background = color.style.background;
+                document.querySelector('body').style.background = background;
+            }));
+        
+
+         </script>
+    </body>
+</html>
